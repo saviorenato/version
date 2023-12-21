@@ -41,7 +41,7 @@ string(18) "1.0.0-51-6c0648fcb"
 
 When a new release is prepared, the string that is passed to the constructor as the first argument needs to be updated.
 
-### How SavioPereira\Version::asString() works
+### How SavioPereira\Version::versionGit() works
 
 * If `$path` is not (part of) a Git repository and `$release` is in `X.Y.Z` format then `$release` is returned as-is.
 * If `$path` is not (part of) a Git repository and `$release` is in `X.Y` format then `$release` is returned suffixed with `-dev`.
