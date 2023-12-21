@@ -2,6 +2,7 @@
     "name": "saviorenato/version",
     "description": "Versionate APPs",
     "homepage": "https://github.com/saviorenato/version",
+    "keywords": ["laravel", "version"],
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -17,5 +18,11 @@
     ],
     "require": {
         "php": "^8.1"
-    }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
