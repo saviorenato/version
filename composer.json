@@ -1,0 +1,21 @@
+{
+    "name": "saviorenato/version",
+    "description": "Versionate APPs",
+    "homepage": "https://github.com/saviorenato/version",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Saviorenato\\Version\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Savio Pereira",
+            "email": "savio.pereira@soluti.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    }
+}
