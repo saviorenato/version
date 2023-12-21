@@ -23,20 +23,20 @@ The constructor of the `SavioPereira\Version` class expects two parameters:
 * `$release` is the version number of the latest release (`X.Y.Z`, for instance) or the name of the release series (`X.Y`) when no release has been made from that branch / for that release series yet.
 * `$path` is the path to the directory (or a subdirectory thereof) where the sourcecode of the project can be found. Simply passing `__DIR__` here usually suffices.
 
-Apart from the constructor, the `SavioPereira\Version` class has a single public method: `asString()`.
+Apart from the constructor, the `SavioPereira\Version` class has a single public method: `versionGit()`.
 
 Here is a contrived example that shows the basic usage:
 
 ```php
-<?php declare(strict_types=1);
+<?php 
 use SavioPereira\Version;
 
 $version = new Version('1.0.0', __DIR__);
 
-var_dump($version->asString());
+var_dump($version->versionGit());
 ```
 ```
-string(18) "1.0.0-17-g00f3408"
+string(18) "1.0.0-51-6c0648fcb"
 ```
 
 When a new release is prepared, the string that is passed to the constructor as the first argument needs to be updated.
